@@ -9,6 +9,9 @@ body {
     font-family: Arial, sans-serif;
         background: #fff;
 }
+.ocul {
+    display: none !important;
+}
 
 .cel-l {
 width: 100%;
