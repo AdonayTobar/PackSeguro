@@ -1,26 +1,16 @@
-// script.js
-document.addEventListener('DOMContentLoaded', () => {
-    // JavaScript code to handle interactive elements goes here
 
-    // Example: Handling click events for buttons
-    document.querySelector('.get-started-btn').addEventListener('click', () => {
-        alert('Get Started button clicked');
-    });
+document.addEventListener('DOMContentLoaded', function () {
+    const buttons = document.querySelectorAll('.get-started-btn');
+    const message = "Necesito una encomienda";
 
-    document.querySelector('.watch-video-btn').addEventListener('click', () => {
-        alert('Watch Video button clicked');
-    });
-
-    document.querySelectorAll('.menu-item button').forEach(button => {
-        button.addEventListener('click', () => {
-            alert('Order Now button clicked for ' + button.closest('.menu-item').querySelector('h3').innerText);
+    buttons.forEach(button => {
+        button.addEventListener('click', function () {
+            const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
         });
     });
-
-    document.querySelector('.cta button').addEventListener('click', () => {
-        alert('Get The App button clicked');
-    });
 });
+
 
 let lastScrollTop = 0;
 const navbar = document.querySelector('nav');
