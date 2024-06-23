@@ -30,6 +30,11 @@ window.addEventListener('scroll', function() {
         navbar.style.top = '0';
     }
 
+    if (scrollTop === 0) {
+            // Al llegar al punto cero, asegúrate de que el navbar sea visible
+            navbar.style.top = '0';
+        }
+
     lastScrollTop = scrollTop;
 });
 
