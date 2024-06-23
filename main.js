@@ -1,15 +1,17 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     const buttons = document.querySelectorAll('.get-started-btn');
+    const phoneNumber = "60288548"; // Reemplaza con tu número de teléfono, con el código del país sin signos + ni espacios
     const message = "Necesito una encomienda";
 
     buttons.forEach(button => {
         button.addEventListener('click', function () {
-            const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(message)}`;
+            const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');
         });
     });
 });
+
 
 
 let lastScrollTop = 0;
