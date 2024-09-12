@@ -420,6 +420,22 @@ footer {
     font-size: 1.5rem;
     margin-top: -0.5rem;
 }
+
+.afiliados .negocio {
+    width: 10rem;
+    background-color: #f4fffd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.negocio img {
+    width: 6rem;
+    border-radius: 1rem;
+}
+.negocio h3 {
+    font-size: 0.7rem;
+}
 .cuadro p {
     font-size: 1rem;
 }
@@ -504,7 +520,23 @@ footer {
     .logo img {
     width: 2.5rem;
 }
-
+.afiliados .negocio {
+    width: 8rem;
+    height: 10rem;
+    background-color: #f4fffd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+.negocio img {
+    width: 7rem;
+    border-radius: 1rem;
+}
+.negocio h3 {
+    font-size: 0.7rem;
+}
 .logo-t {
     color: white;
     font-size: 1.5rem;
